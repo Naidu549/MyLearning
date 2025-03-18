@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <h2>Machine Learning </h2>
+        <style>
+            h1,h2,h3,h4,h5,h6{
+                text-align:center;
+            }
+            div{
+                text-align:left:
+                display:justify;
+                font-size:12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h3>unit - 1</h3>
+            <h4>Introduction to Machine Learning :</h4>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Introduction, Components of Learning, Learning Models, Geometric Models, Probabilistic Models, Logic
+Models, Grouping and Grading, Designing a Learning System, Types of Learning, Supervised, 
+Unsupervised, Reinforcement, Perspectives and Issues, Version Spaces, PAC Learning, VC Dimension.
+</p>
+<h4>
+    Introduction
+</h4>
+<h5>
+    What Is Machine Learning?
+</h5>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMachine learning is programming computers to optimize a performance criterion using example
+data or past experience. We have a model defined up to some parameters, and learning is the execution 
+of a computer program to optimize the parameters of the model using the training data or past experience. 
+The model may be predictive to make predictions in the future, or descriptive to gain knowledge from
+data, or both.</p>
+<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Arthur Samuel, an early American leader in the field of computer gaming and artificial intelligence,
+coined the term ―Machine Learning in 1959 while at IBM. He defined machine learning as ―the field of
+study that gives computers the ability to learn without being explicitly programmed. However, there is
+no universally accepted definition for machine learning. Different authors define the term differently.
+</p>
+<h5>Definition of learning</h5>
+<h6>Definition</h6>
+<p>
+    A computer program is said to learn from experience E with respect to some class of tasks T and
+performance measure P, if its performance at tasks T, as measured by P, improves with experience E.
+</p>
+
+Examples<br>
+<ol>
+    <li>Handwriting recognition learning problem
+    <ul>
+        <li>
+            Task T: Recognising and classifying handwritten words within images
+        </li>
+        <li>
+            Performance P: Percent of words correctly classified
+        </li>
+        <li>
+            Training experience E: A dataset of handwritten words with given classifications
+        </li>
+    </ul>
+    </li>
+    <li>A robot driving learning problem
+        <ul>
+            <li>
+                Task T: Driving on highways using vision sensors
+            </li>
+            <li>
+                Performance measure P: Average distance traveled before an error
+            </li>
+            <li>
+                training experience: A sequence of images and steering commands recorded while
+observing a human driver
+            </li>
+        </ul>
+    </li>
+    <li>A chess learning problem
+        <ul>
+            <li>
+                Task T: Playing chess
+            </li>
+            <li>
+                Performance measure P: Percent of games won against opponents
+            </li>
+            <li>
+                Training experience E: Playing practice games against itself
+            </li>
+        </ul>
+    </li>
+</ol>
+
+Definition<br>
+<p>
+    A computer program which learns from experience is called a machine learning program or
+simply a learning program. Such a program is sometimes also referred to as a learner.
+</p>
+<h4>
+    Components of Learning
+</h4>
+<p>
+    Basic components of learning process
+The learning process, whether by a human or a machine, can be divided into four components,
+namely, data storage, abstraction, generalization and evaluation. Figure 1.1 illustrates the
+variouscomponents and the steps involved in the learning process.
+</p>
+<img src="fig1.1.jpg" width=100%>
+<h6>1. Data storage</h6>
+<p>
+  Facilities for storing and retrieving huge amounts of data are an important component of the
+learning process. Humans and computers alike utilize data storage as a foundation for advanced
+reasoning.<br>
+• In a human being, the data is stored in the brain and data is retrieved using electrochemical signals.
+• Computers use hard disk drives, flash memory, random access memory and similar devices to store
+data and use cables and other technology to retrieve data.
+</p>
+<h6>2. Abstraction</h6>
+<p>
+  The second component of the learning process is known as abstraction.<br>
+Abstraction is the process of extracting knowledge about stored data. This involves creating general
+concepts about the data as a whole. The creation of knowledge involves application of known models and
+creation of new models.<br>
+The process of fitting a model to a dataset is known as training. When the model has been trained, the
+data is transformed into an abstract form that summarizes the original information.
+</p>
+<h6>3. Generalization</h6>
+<p>
+  The third component of the learning process is known as generalisation.<br>
+The term generalization describes the process of turning the knowledge about stored data into a form that
+can be utilized for future action. These actions are to be carried out on tasks that are similar, but not
+identical, to those what have been seen before. In generalization, the goal is to discover those properties
+of the data that will be most relevant to future tasks.
+</p>
+<h6>4. Evaluation</h6>
+<p>
+  Evaluation is the last component of the learning process.<br>
+It is the process of giving feedback to the user to measure the utility of the learned knowledge. This
+feedback is then utilised to effect improvements in the whole learning process
+  </p>
+<h6>Applications of machine learning</h6>
+<p>
+  Application of machine learning methods to large databases is called data mining. In data
+mining, a large volume of data is processed to construct a simple model with valuable use, for example,
+having high predictive accuracy.
+</p>
+<ol type=1>The following is a list of some of the typical applications of machine learning.
+  <li>
+    In retail business, machine learning is used to study consumer behaviour.
+  </li>
+  <li>
+    In finance, banks analyze their past data to build models to use in credit applications, fraud
+detection, and the stock market.
+  </li>
+  <li>
+    In manufacturing, learning models are used for optimization, control, and troubleshooting.
+  </li>
+  <li>
+    In medicine, learning programs are used for medical diagnosis.
+  </li>
+  <li>
+    In telecommunications, call patterns are analyzed for network optimization and maximizing the
+quality of service.
+  </li>
+  <li>
+    In science, large amounts of data in physics, astronomy, and biology can only be analyzed fast
+enough by computers. The World Wide Web is huge; it is constantly growing and searching for
+relevant information cannot be done manually.
+  </li>
+  <li>
+    In artificial intelligence, it is used to teach a system to learn and adapt to changes so that the
+system designer need not foresee and provide solutions for all possible situations.
+  </li>
+  <li>
+    It is used to find solutions to many problems in vision, speech recognition, and robotics.
+  </li>
+  <li>
+    Machine learning methods are applied in the design of computer-controlled vehicles to steer
+correctly when driving on a variety of roads.
+  </li>
+  <li>
+    Machine learning methods have been used to develop programmes for playing games such as
+chess, backgammon and Go.
+  </li>
+</ol>
+<h5>Learning Models</h5>
+<p>
+  Machine learning is concerned with using the right features to build the right models that
+achieve the right tasks. The basic idea of Learning models has divided into three categories.
+For a given problem, the collection of all possible outcomes represents the sample space or instance
+space.
+</p>
+<ul>
+  <li>
+    Using a Logical expression. (<b>Logical models</b>)
+  </li>
+  <li>
+    Using the Geometry of the instance space. (<b>Geometric models</b>)
+  </li>
+  <li>
+    Using Probability to classify the instance space. (<b>Probabilistic models</b>)
+  </li>
+  <li>
+    Grouping and Grading
+  </li>
+</ul>
+
+<h6>Logical models</h6>
+<p>
+  Logical models use a logical expression to divide the instance space into segments and hence
+construct grouping models. A logical expression is an expression that returns a Boolean value, i.e., a
+True or False outcome. Once the data is grouped using a logical expression, the data is divided into
+homogeneous groupings for the problem we are trying to solve. For example, for a classificationproblem,
+all the instances in the group belong to one class.
+</p>
+          <p>
+            There are mainly two kinds of logical models: Tree models and Rule models.
+          </p>
+          <p>
+            Rule models consist of a collection of implications or IF-THEN rules. For tree-based models, the 'if-part'
+defines a segment and the 'then-part' defines the behaviour of the model for this segment. Rule models
+follow the same reasoning.
+          </p>
+          <h6>
+            Logical models and Concept learning
+          </h6>
+          <p>
+            To understand logical models further, we need to understand the idea of Concept Learning.
+Concept Learning involves learning logical expressions or concepts from examples. The idea of Concept
+Learning fits in well with the idea of Machine learning, i.e., inferring a general function from specific
+training examples. Concept learning forms the basis of both tree-based and rule-based models. More
+formally, Concept Learning involves acquiring the definition of a general category from a given set of
+positive and negative training examples of the category. A Formal Definition for Concept Learning is
+<b>"The inferring of a Boolean-valued function from training examples of its input and output.”</b> In
+concept learning, we only learn a description for the positive class and label everything that doesn‘t
+satisfy that description as negative.
+          </p>
+
+
+
+
+        </div>
+    </body>
+</html>
